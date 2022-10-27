@@ -1,0 +1,49 @@
+Write a Program to find area of a circle using Function, take input from the user
+#include <iostream>
+using namespace std;
+
+float areaOfCircle(float radius_circle);
+
+int main() {
+   float radius;
+
+   cout << "Enter the radius of circle: ";
+   cin >> radius;
+
+   cout << "Area of circle: " << areaOfCircle(radius) << endl;
+
+   return 0;
+}
+
+float areaOfCircle(float radius_circle)
+{
+   float area_circle;
+   area_circle = 3.14 * radius_circle * radius_circle;
+
+   return area_circle; 
+ }
+
+
+#Write a Program to find factorial, take input from the user
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    long factorial = 1.0;
+
+    cout << "Enter a positive integer: ";
+    cin >> n;
+
+    if (n < 0)
+        cout << "Error! Factorial of a negative number doesn't exist.";
+    else {
+        for(int i = 1; i <= n; ++i) {
+            factorial *= i;
+        }
+        cout << "Factorial is = " << factorial;    
+    }
+
+    return 0;
+}
